@@ -658,9 +658,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- SBI Header Block ---
-st.markdown("""
-    <div class="sbi-header">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" class="header-img">
+import base64
+
+# Read and encode local image (lll.png) as base64
+with open("logo_sbi.png", "rb") as f:
+    encoded = base64.b64encode(f.read()).decode()
+
+# Inject into your HTML block
+st.markdown(f"""
+    <div class="sbi-header" style="display: flex; align-items: center; gap: 1rem;">
+        <img src="data:image/png;base64,{encoded}" class="header-img" style="height: 65px;">
         <div>
             <div class="sbi-header-title">SBI RBO IntelliAI</div>
             <div class="sbi-subtitle">Data-driven GenAI intelligence</div>
