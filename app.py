@@ -407,7 +407,7 @@ st.markdown("""
         }
 
         .sbi-header-title {
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 700;
             color: #ffffff;
         }
