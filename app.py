@@ -200,10 +200,8 @@ Your Region is ranked <strong>2nd</strong> in your AO (out of 5 RBOs), <strong>3
 Maintain momentum in CASA and Loans.<br>
 Aggressively tackle NPA management.  <br>
 
-🌟 <strong>Top Performing Branches</strong>: <br>
-New Delhi Main Branch (Parliament Street), Connaught Place<br>
-🔻 <strong>Bottom Performing Branches</strong>: <br>
-Saket, Janakpuri, Dwarka Sector 10<br>
+🌟 <strong>Top Performing Branches:</strong><br> New Delhi Main (Parliament Street), Connaught Place, Daryaganj<br>
+🔻 <strong>Bottom Performing Branches:</strong><br> Saket, Janakpuri, Dwarka Sector 10<br>
 """
 
 # 📊 Category-wise Deep Dive  
@@ -211,14 +209,12 @@ Saket, Janakpuri, Dwarka Sector 10<br>
 rm_daily_nudge_rbo1_deposits = """
 💰 <strong>Deposits (CASA)</strong><br>
 MTD: ₹16.02 Cr vs Target ₹18 Cr 🔹 89% Achieved – Strong performance.<br>
-⭐ <strong>Top Branches:</strong><br>
-New Delhi Main, Connaught Place, Daryaganj<br>
-🔻<strong>Bottom Branches:</strong><br>
-Badarpur, Connaught Place, Karol Bagh, Patel Nagar, Pitam Pura  <br>
+⭐ <strong>Top Branches:</strong><br> New Delhi Main, Connaught Place, South Extension<br>
+🔻 <strong>Bottom Branches:</strong> <br>Badarpur, Karol Bagh, Patel Nagar, Pitam Pura, Saraswati Vihar<br>
 📌 <strong>Snapshot:</strong><br>
  • 8 branches <40% budget achievement; 28 branches >90%<br>
  • <strong>Persistent Laggards:</strong><br>
- Badarpur, Connaught Place, Karol Bagh + 3 others<br>
+ Badarpur, Karol Bagh, Saraswati Vihar + 3 others<br>
  • <strong>New Declines:</strong><br>
    Patel Nagar: Lost major institutional account<br>
    Pitam Pura: Salaried accounts moved due to better competitor package  <br>
@@ -236,15 +232,15 @@ rm_daily_nudge_rbo1_advances = """
 ⬆️ <strong>Advances (Total)</strong><br>
 MTD: ₹13.13 Cr vs Target ₹20 Cr 🔹 65% Achieved<br>
 ⭐ <strong>Top Branches:</strong><br>
-New Delhi Main, Rohini Sec-7, Vasant Kunj<br>
+Rohini Sec-7, Vasant Kunj, Green Park<br>
 🔻 <strong>Bottom Branches:</strong><br>
-Badarpur, Connaught Place, Karol Bagh, Patel Nagar, Dwarka Sec-10   <br><br>
+Dwarka Sector 10, Karol Bagh, Patel Nagar, Badarpur, Dilshad Garden<br><br>
 💼 <strong>SME Loans</strong><br>
 MTD: ₹5.2 Cr vs Target ₹8 Cr 🔹 65% Achieved<br>
 ⭐ <strong>Top Branches:</strong><br>
 New Delhi Main Branch, Rohini Sec-7, Vasant Kunj<br>
 🔻 <strong>Bottom Branches:</strong><br>
-Badarpur, Connaught Place, Karol Bagh, Patel Nagar, Dwarka Sec-10<br>
+Dwarka Sector 10, Karol Bagh, Patel Nagar, Badarpur, Dilshad Garden<br>
 📌 <strong>Snapshot:</strong> <br>
  • 5 branches <30% budget achievement; 20 >70% budget achievement<br>
  • <strong>Persistent Laggards:</strong><br>
@@ -258,18 +254,18 @@ Suggest tailored loan products for distinct SME segments
 (e.g., working capital finance, machinery loans, startup credit).<br>
 Proactively deepen client relationships.
  <br>• <strong>New Issues:</strong><br>
- Dwarka: Push CGTMSE-backed options<br>
- Patel Nagar: Fast-track high-ticket loans, optimize approval flow    <br><br>
+ Dwarka Sec-10: Push CGTMSE-backed options<br>
+ Patel Nagar: Fast-track high-ticket loans, streamline the loan approval process<br><br>
 🏠 <strong>Housing Loans</strong><br>
 MTD: ₹4.88 Cr vs Target ₹7.55 Cr 🔹 65% Achieved<br>
 ⭐ <strong>Top Branches:</strong><br>
-New Delhi Main, Rohini Sec-7, Vasant Kunj<br>
+Mayur Vihar, Rajouri Garden, Vasant Kunj<br>
 🔻 <strong>Bottom Branches:</strong><br>
-Badarpur, Connaught Place, Karol Bagh, Patel Nagar, Dwarka Sec-10<br>
+Badarpur, Karol Bagh, Patel Nagar, Dwarka Sector 10, Laxmi Nagar<br>
 📌 <strong>Snapshot:</strong><br>
  • 6 branches <35% budget achievement<br>
  • <strong>Persistent Laggards:</strong><br>
- Connaught Place, Laxmi Nagar + 1 (low market demand)<br>
+Connaught Place, Laxmi Nagar + 1 (low market demand)<br>
  • <strong>New Issues:</strong><br>
    Green Park: High rejections from poor credit scores, weak lead quality.<br>
    Tilak Nagar: Competitor edge (rate & speed), 15% drop in applications<br>
@@ -283,8 +279,8 @@ Tilak Nagar: Highlight transparent pricing, eliminate hidden charges, and stream
 🚗 <strong>Auto Loans</strong><br>
 MTD: ₹3.05 Cr vs Target ₹4.5 Cr 🔹 68% Achieved<br>
 ⭐ <strong>Top Branches:</strong><br>
-New Delhi Main, Rohini Sec-7, Vasant Kunj<br>
-🔻 <strong>Bottom Branches:</strong> Badarpur, Connaught Place, Karol Bagh, Patel Nagar, Dwarka Sec-10<br>
+Okhla Industrial Area, Rohini Sec-7, Hauz Khas<br>
+🔻 <strong>Bottom Branches:</strong> <br> Badarpur, Karol Bagh, Patel Nagar, Dwarka Sector 10, Mayur Vihar<br>
  📌 <strong>Key Issues:</strong><br>
 Lost key dealers to competitors offering better incentives and faster disbursals.<br>
 Delayed approvals (2-day lag) causing dealer dissatisfaction.<br>
@@ -297,13 +293,13 @@ rm_daily_nudge_rbo1_npa = """
 ⚠️ <strong>NPA Management</strong><br>
 Current NPA: 1.83% 🔺 +18 bps vs Target 1.65% → ₹1.5 Cr total NPA  <br>
 ⭐ <strong>Top Branches:</strong><br>
-New Delhi Main, Rohini Sec-7, Vasant Kunj<br>
+South Extension, New Delhi Main, Rajouri Garden<br>
 🔻 <strong>Bottom Branches:</strong><br>
-Saket, Narela, Dwarka Sec-10, Connaught Place<br>
+Saket, Janakpuri, Dwarka Sector 10, Connaught Place<br>
 📌 <strong>Snapshot:</strong><br>
  Saket: High NPA ₹0.18 Cr – recovery/appraisal gaps<br>
  Janakpuri: Personal Loan NPA ↑ ₹0.15 Cr<br>
- Connaught Place: NPA% down, but actuals up ₹0.20 Cr – disbursement spike masking risk<br>
+ Connaught Place: NPA% down, but actuals up ₹0.20 Cr – with a recent disbursement spike potentially masking underlying risk<br>
 🛠️ <strong>Actions:</strong><br>
  Rapid reviews, restructure viable cases, intensify collections for others<br>
  Boost early warning triggers & post-disbursal checks<br>
@@ -315,7 +311,7 @@ Uptime: 93.9% vs Target 95%<br>
 ⭐ <strong>Top ATMs:</strong><br>
 New Delhi Main Branch, Karol Bagh, Civil Lines<br>
 🔻 <strong>Bottom ATMs:</strong><br>
-Laxmi Nagar, Uttam Nagar<br>
+Laxmi Nagar, Uttam Nagar, Sarojini Nagar, Shastri Nagar<br>
 📌 <strong>Snapshot:</strong><br>
  Laxmi Nagar: poor connectivity, old hardware<br>
  Sarojini Nagar, Shastri Nagar: Major cash-outs due to poor forecasting<br>
@@ -340,7 +336,7 @@ rbo_deep_dives = {
         "Advances": rm_daily_nudge_rbo3_advances,
         "Operations": rm_daily_nudge_rbo3_ops,
         "NPA": rm_daily_nudge_rbo3_npa,
-        "How this works?": rm_daily_nudge_agent,
+        "How does this work?": rm_daily_nudge_agent,
 
 
     },
@@ -349,7 +345,7 @@ rbo_deep_dives = {
         "Advances": rm_daily_nudge_rbo1_advances,
         "Operations": rm_daily_nudge_rbo1_ops,
         "NPA": rm_daily_nudge_rbo1_npa,
-                "How this works?": rm_daily_nudge_agent,
+                "How does this work?": rm_daily_nudge_agent,
 
 
     },
@@ -364,7 +360,7 @@ deep_dive_icons = {
     "NPA": "📉",
     "Cross-Sell & Digital": "📱",
     "Compliance": "✅",
-    "How this works?": "🤖"
+    "How does this work?": "🤖"
 }
 
 
