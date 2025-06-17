@@ -497,7 +497,7 @@ rbo_deep_dives = {
         "Advances": rm_daily_nudge_rbo3_advances,
         "Operations": rm_daily_nudge_rbo3_ops,
         "NPA": rm_daily_nudge_rbo3_npa,
-        "How Was This Report Generated?": rm_daily_nudge_agent,
+        "How this works?": rm_daily_nudge_agent,
 
 
     },
@@ -506,7 +506,7 @@ rbo_deep_dives = {
         "Advances": rm_daily_nudge_rbo1_advances,
         "Operations": rm_daily_nudge_rbo1_ops,
         "NPA": rm_daily_nudge_rbo1_npa,
-                "How Was This Report Generated?": rm_daily_nudge_agent,
+                "How this works?": rm_daily_nudge_agent,
 
 
     },
@@ -521,7 +521,7 @@ deep_dive_icons = {
     "NPA": "📉",
     "Cross-Sell & Digital": "📱",
     "Compliance": "✅",
-    "How Was This Report Generated?": "🤖"
+    "How this works?": "🤖"
 }
 
 
@@ -723,7 +723,7 @@ elif st.session_state.page == "chat":
 
     if st.session_state.get("show_spinner", True):
         with st.spinner(f"Generating insights for {rbo}..."):
-            time.sleep(3.5)
+            time.sleep(2.5)
         st.session_state.show_spinner = False
         st.rerun()
     else:
