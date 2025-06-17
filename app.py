@@ -287,7 +287,7 @@ New Delhi Main, Rohini Sec-7, Vasant Kunj<br>
 🔻 <strong>Bottom Branches:</strong> Badarpur, Connaught Place, Karol Bagh, Patel Nagar, Dwarka Sec-10<br>
  📌 <strong>Key Issues:</strong><br>
 Lost key dealers to competitors offering better incentives and faster disbursals.<br>
-Delayed approvals (2-day lag) causing dealer dissatisfaction.
+Delayed approvals (2-day lag) causing dealer dissatisfaction.<br>
 🛠️ <strong>Actions:</strong><br>
 Re-engage dealers with improved incentives.<br>
 Enforce presence of on-site officers to ensure timely, real-time loan sourcing.
@@ -305,8 +305,8 @@ Saket, Narela, Dwarka Sec-10, Connaught Place<br>
  Janakpuri: Personal Loan NPA ↑ ₹0.15 Cr<br>
  Connaught Place: NPA% down, but actuals up ₹0.20 Cr – disbursement spike masking risk<br>
 🛠️ <strong>Actions:</strong><br>
- Rapid reviews, restructure viable cases, recover others<br>
- Boost early warning triggers & intensify collections, legal action, post-disbursal checks<br>
+ Rapid reviews, restructure viable cases, intensify collections for others<br>
+ Boost early warning triggers & post-disbursal checks<br>
 """
 
 rm_daily_nudge_rbo1_ops = """
