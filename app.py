@@ -593,6 +593,9 @@ st.markdown("""
         .stButton>button:hover {
             background-color: #005A96;
         }
+        .stButton {
+        margin-bottom: 2px; /* 👈 Controls spacing between buttons */
+        }
 
         .centered-content {
             display: flex;
@@ -607,11 +610,11 @@ st.markdown("""
         }
 
         .chat-container {
-            padding: 15px 20px;
+            padding: 10px 15px;
             background-color: #ffffff;
             border: 1px solid #dbe4f0;
-            border-radius: 10px;
-            margin-top: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
             box-shadow: 0 1px 4px rgba(0,0,0,0.05);
         }
 
@@ -712,99 +715,112 @@ if st.session_state.page == "home":
   # --- CHAT PAGE ---
   
   
-  
 # --- CHAT PAGE ---
 elif st.session_state.page == "chat":
 
-    rbo = st.session_state.get("selected_rbo", "RBO-1")  # Default for demo
-
+    rbo = st.session_state.get("selected_rbo", "RBO-1")
 
     st.markdown(f"#### 💬 IntelliAI Chat for {rbo}")
 
     if st.session_state.get("show_spinner", True):
         with st.spinner(f"Generating insights for {rbo}..."):
-            time.sleep(2.5)
+            time.sleep(2)
         st.session_state.show_spinner = False
         st.rerun()
-    else:
-        with st.container():
-            st.markdown(f"""
-                <div class="chat-container">
-                    <div class="chat-bubble bot">
-                        {rbo_summaries.get(rbo, 'No summary available.')}
 
-            """, unsafe_allow_html=True)
+    if "chat_log" not in st.session_state:
+        st.session_state.chat_log = []
 
+    if "selected_deep_dives" not in st.session_state:
+        st.session_state.selected_deep_dives = []
+
+    # --- Inject styles ---
+    st.markdown("""
+    <style>
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            border: 1px solid #dbe4f0;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .chat-bubble {
+            padding: 10px 15px;
+            border-radius: 12px;
+            max-width: 85%;
+            word-wrap: break-word;
+            font-size: 15px;
+        }
+
+        .chat-bubble.bot {
+            align-self: flex-start;
+            background-color: #eef5fc;
+            color: #002B5B;
+        }
+
+        .chat-bubble.user {
+            align-self: flex-end;
+            background-color: #d9fdd3;
+            color: #002B5B;
+        }
+
+        .stButton > button {
+            padding: 0.4rem 0.6rem;
+            font-size: 0.83rem;
+            margin: 2px;
+            border-radius: 6px;
+
+        }
+        .stButton {
+            margin-bottom: 2px; /* 👈 Controls spacing between buttons */
+        }
+
+    </style>
+    """, unsafe_allow_html=True)
+
+    # --- Display RBO summary as first bot message ---
+    with st.container():
+        st.markdown(f"""
+            <div class="chat-container">
+                <div class="chat-bubble bot">
+                    {rbo_summaries.get(rbo, 'No summary available.')}
+
+        """, unsafe_allow_html=True)
+    
+
+
+
+    # --- Display chat log for each selected deep dive ---
+    for dive in st.session_state.chat_log:
+        icon = deep_dive_icons.get(dive, "📂")
+        response = rbo_deep_dives[rbo].get(dive, "No insights available.")
+        st.markdown(f"""
+            <div class="chat-container">
+                <div class="chat-bubble user">{icon} {dive}</div>
+                <div class="chat-bubble bot">{response}</div>
+            </div>
+        """, unsafe_allow_html=True)
+
+    # --- Show deep dive buttons at the bottom ---
     if rbo in rbo_deep_dives:
 
         deep_dive_options = list(rbo_deep_dives[rbo].keys())
-
-        if "chat_log" not in st.session_state:
-            st.session_state.chat_log = []
-
-        if "selected_deep_dives" not in st.session_state:
-            st.session_state.selected_deep_dives = []
-
-        # --- Inject styles ---
-        st.markdown("""
-        <style>
-            .chat-container {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-                padding: 15px 20px;
-                background-color: #ffffff;
-                border: 1px solid #dbe4f0;
-                border-radius: 10px;
-                margin-top: 10px;
-                box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-            }
-
-            .chat-bubble {
-                padding: 10px 15px;
-                border-radius: 12px;
-                max-width: 85%;
-                word-wrap: break-word;
-                font-size: 15px;
-            }
-
-            .chat-bubble.bot {
-                align-self: flex-start;
-                background-color: #eef5fc;
-                color: #002B5B;
-            }
-
-            .chat-bubble.user {
-                align-self: flex-end;
-                background-color: #d9fdd3;
-                color: #002B5B;
-            }
-
-            .stButton > button {
-                padding: 0.4rem 0.6rem;
-                font-size: 0.83rem;
-                margin: 2px;
-                border-radius: 6px;
-            }
-        </style>
-        """, unsafe_allow_html=True)
-
-        # --- Render chat log ---
-        for dive in st.session_state.chat_log:
-            icon = deep_dive_icons.get(dive, "📂")
-            response = rbo_deep_dives[rbo].get(dive, "No insights available.")
-            st.markdown(f"""
-                <div class="chat-container">
-                    <div class="chat-bubble user">{icon} {dive}</div>
-                    <div class="chat-bubble bot">{response}</div>
-                </div>
-            """, unsafe_allow_html=True)
-
-        # --- Show only unselected options as buttons ---
         remaining_dive_options = [d for d in deep_dive_options if d not in st.session_state.chat_log]
 
         if remaining_dive_options:
-            st.markdown('<div class="chat-section-title" style="margin-top: 20px;">Select segment for detailed insight:</div>', unsafe_allow_html=True)
+            st.markdown(f"""
+                <div class="chat-container">
+                    <div class="chat-bubble bot">
+                        Select a segment to explore insights:
+                    </div>
+                </div>
+            """, unsafe_allow_html=True)
+
             cols = st.columns(len(remaining_dive_options), gap="small")
 
             for i, dive in enumerate(remaining_dive_options):
