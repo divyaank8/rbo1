@@ -187,7 +187,7 @@ Nudge for Mr. A.K. Sharma (RM – RBO-1)<br>
 
 🎉 <strong>Congratulations!</strong> 🏆  <br>
 
-Your region is ranks <strong>2nd</strong> in your AO (among 5 RBOs), <strong>3rd</strong> in your Network, and <strong>6th</strong> in your Circle.<br>
+Your region ranks <strong>2nd</strong> in your AO (among 5 RBOs), <strong>3rd</strong> in your Network, and <strong>6th</strong> in your Circle.<br>
  <br>Your team has shown strong, consistent performance this month, maintaining steady Deposits (89%) and Advances (65%) MTD budget achievements. However, the rising NPA trend (+18 bps) needs your urgent attention.<br>
 
 📈 <strong>Performance Overview</strong><br>
